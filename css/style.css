@@ -1,0 +1,715 @@
+
+/*===== Autthor Info =====*/
+
+Name : Md.Ariful Islam 
+Student Of Sonargoan University 
+Dept. of CSE
+
+/*
+	===== Index =====
+	01.	Global CSS
+	02.	Header Section CSS
+	03.	Hero Section CSS
+	04.	Services Section CSS
+	05.	Work Section CSS
+	06.	About US Section
+	07.	Feature Section CSS
+	08.	Branding Section CSS
+	09.	Design Section CSS
+	10.	Contact Section CSS
+	11.	Footer Section CSS
+	12.	Responsive CSS
+*/
+
+
+
+/*Global CSS*/
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+</style>
+
+body{
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+	margin: 0px !important;
+}
+
+.btn-top{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	background: orange;
+	color: #000;
+}
+
+/*Header Section CSS*/
+
+header{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/banner-bg.png);
+    background-size: cover;
+    min-height: 650px;
+    background-position: center;
+}
+header .navbar{
+    padding-top: 22px;
+}
+header .navbar .nav-item{
+    padding: 0 18px;
+}
+header .navbar .nav-item .nav-link{
+    color: #fff;
+    transition: 0.5s linear;
+}
+header .navbar .nav-item .nav-link:hover{
+    color: #fff;
+    border-bottom: 2px solid #fb414e;
+}
+header .navbar .nav-item.active .nav-link{
+    color: #fff;
+    border-bottom: 2px solid #fb414e;
+}
+
+/*Header Section End*/
+
+/*Hero Section CSS Start*/
+
+.hero-area{
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+}
+.hero-area h1{
+	font-weight: 700;
+	padding: 0 17%;
+	padding-bottom: 22px;
+}
+.hero-area p{
+    padding: 0px 24%;
+    line-height: 1.7;
+    color: #dcdcdc;
+    margin-bottom: 50px !important;
+}
+.hero-area .btn-cta{
+    color: #fff;
+    background: #fb414e;
+    padding: 7px 50px;
+    border-radius: 0;
+    margin: 0 10px;
+}
+.hero-area .btn-cta:hover{
+	background: #ef0c1c;
+}
+.hero-area .btn-ghost{
+    color: #fff;
+    border-radius: 0;
+    padding: 7px 50px;
+    margin: 0 10px;
+    border: 2px solid #fb414e;
+}
+.hero-area .btn-ghost:hover{
+	background: #ef0c1c;
+}
+
+/*Hero Section CSS End*/
+
+/*Services Section CSS Start*/
+
+.service{
+	padding-bottom: 80px;
+	margin-top: -80px;
+	overflow: hidden;
+}
+.service .box{
+    background: #202b30;
+    padding: 15%;
+    color: #fff;
+    transition: 0.5s linear;
+    position: relative;
+    z-index: 1;
+}
+.service .box img{
+    margin-bottom: 20px;
+}
+.service .box h5{
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.service .box .white-line{
+	height: 3px;
+    width: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+}
+.service .box p{}
+
+
+.service .box::after{
+	content: "";
+	position: absolute;
+	background: #fb414e;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transform: scale(0);
+	transform-origin: top left;
+	transition: 0.4s linear;
+}
+.service .box:hover::after{
+	transform: scale(1);
+	transform-origin: bottom right;
+}
+
+/*Services Section CSS End*/
+
+/*Work Section CSS Start*/
+
+
+.works{
+    text-align: center;
+    padding: 80px 0px;
+}
+.works h6{
+    color: #fb414e;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.works h1{
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.works .highlight{
+    color: #fb414e;
+}
+.works p{
+    color: #838383;
+    padding: 0 18%;
+    margin-bottom: 50px !important;
+}
+
+.works .box{
+	margin-bottom: 40px;
+}
+.works .box img{
+    margin-bottom: 20px;
+}
+.works h2{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.works .box p{
+	padding: 0 5%;
+	margin-bottom: 0 !important;
+}
+
+/*Work Section CSS End*/
+
+/*About US Section CSS Start*/
+
+.about{
+    background: #202b30;
+    padding: 80px 0px;
+    color: #fff;
+}
+.about h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-right: 10%;
+    margin-top: 20px;
+
+}
+.about p{
+    color: #dcdcdc;
+    padding-right: 8%;
+    line-height: 1.7;
+    margin-bottom: 50px !important;
+}
+.about .btn-custom{
+	color: #fff;
+	padding: 7px 50px;
+	border: 2px solid #fff;
+	border-radius: 0;
+	position: relative;
+	z-index: 0;
+}
+.about .btn-custom::after{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background: #fb414e;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transform: scale(0);
+	transform-origin: top left;
+	transition: 0.4s linear;
+}
+.about .btn-custom:hover::after{
+	transform: scale(1);
+	transform-origin: top right;
+}
+.about img{}
+
+
+
+/*About US Section CSS End*/
+
+
+/*Feature Section CSS Start*/
+
+.feature{
+	background: #f8f8f8;
+	padding: 80px 0px 40px;
+}
+.feature .left{
+    margin-bottom: 40px;
+}
+.feature .left h5{
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.feature .left p{
+    color: #838383;
+    line-height: 1.7;
+    padding-right: 5%;
+}
+
+.feature .right{
+    padding-left: 5%;
+}
+.feature .right h2{
+    font-weight: 700;
+    font-size: 35px;
+    padding-right: 10%;
+    margin-bottom: 40px;
+}
+.feature .right p{
+    line-height: 1.7;
+    margin-bottom: 20px !important;
+    color: #838383;
+}
+
+/*Feature Section CSS End*/
+
+/*Branding Section CSS Start*/
+
+.branding{
+    background: #202b30;
+    padding: 80px 0px;
+    color: #fff;
+}
+.branding .box{}
+.branding .img-1{
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+.branding .img-2{
+    text-align: right;
+}
+.branding .img-3{
+    text-align: left;
+}
+.branding .img-4{
+    text-align: right;
+    margin-top: 28px;
+}
+.branding h2{
+	text-align: right;
+	font-size: 35px;
+	margin-top: 40px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.branding p{
+    text-align: right;
+    color: #838383;
+    line-height: 1.7;
+    padding-left: 7%;
+}
+
+/*Branding Section CSS End*/
+
+/*Design Section CSS Start*/
+
+.design{
+	background: #f8f8f8;
+}
+.design .left-box{
+    padding: 80px 0px;
+}
+.design h2{
+    font-size: 35px;
+    font-weight: 700;
+    padding-right: 10%;
+    margin-bottom: 20px;
+}
+.design p{
+    color: #838383;
+    line-height: 1.7;
+    margin-bottom: 40px !important;
+}
+.design .box{}
+.design .box img{
+    margin-bottom: 20px;
+}
+.design .box h5{
+    font-size: 22px;
+}
+.design .box p{
+    line-height: 1.7;
+    margin-bottom: 0 !important;
+}
+.design .right-box{
+    background: url(../img/girl.png);
+    background-size: cover;
+    height: 595px;
+    background-position: center bottom;
+}
+
+/*Design Section CSS End*/
+
+/*Contact Section CSS Start*/
+
+.contact{
+    padding: 80px 0px;
+}
+.contact h2{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: right;
+    padding-left: 10%;
+    margin-bottom: 30px;
+}
+.contact p{
+    color: #838383;
+    line-height: 1.7;
+    margin-bottom: 30px !important;
+    text-align: right;
+}
+.contact form{}
+.contact .form-row{
+    margin-bottom: 20px;
+}
+.contact .form-control{
+    padding: 7px;
+    border-radius: 0;
+    border: 1px solid;
+}
+.contact .btnSubmit{
+    background: #fb414e;
+    color: #fff;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+
+/*Contact Section CSS End*/
+
+/*Footer Section CSS Start*/
+
+footer{
+    background: #202b30;
+    padding: 30px 0;
+}
+footer p{
+    color: #838382;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*Footer Section CSS End*/
+
+
+/*Responsive CSS Start*/
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+	.service .box {
+	    padding: 8%;
+	    }
+	    .about h2 {
+	    margin-top: 0px;
+	}
+	.branding h2 {
+		margin-top: 0px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+	.hero-area h1 {
+	    padding: 0 7%;  
+	}
+	.hero-area p {
+	    padding: 0px 7%;
+	}
+	.service .box p {
+	    font-size: 12px;
+	}
+	.works {
+	    text-align: center;
+	    padding: 40px 0px 80px;
+	}
+	.works h2 {
+		font-size: 30px;
+	}
+	.about h2 {
+    padding-right: 0;
+    font-size: 30px;
+	}
+	.about img {
+	    margin-top: 85px;
+	}
+	.feature .right h2 {
+	    font-size: 30px;
+	    padding-right: 0px;
+	}
+	.branding .box {
+	    margin-top: 80px;
+	}
+	.branding h2 {
+	    font-size: 30px;
+	}
+	.design h2 {
+	    font-size: 30px;
+	}
+	.contact h2 {
+	    font-size: 40px;
+	    text-align: left;
+	    padding-left: 0px;
+	}
+	.contact p {
+	    text-align: left;
+	}
+	.contact form {
+	    margin-top: 30px;
+	}
+
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+	.hero-area h1 {
+	    padding: 0;
+	    padding-bottom: 10px;
+	    font-size: 30px;
+	}
+	.hero-area p {
+	    padding: 0;
+	}
+	.service {
+	    padding-bottom: 40px;
+	}
+	.service .box {
+	    margin-bottom: 30px;
+	    text-align: center;
+	}
+	.service .box .white-line {
+	    margin: 0 auto;
+	}
+	.service .box p {
+	    padding-top: 20px;
+	}
+	.works {
+	    padding: 40px 0px;
+	}
+	.works h1 {
+	    font-size: 30px;
+	}
+	.works h2 {
+	    font-size: 25px;
+	}
+	.about {
+	    padding: 40px 0px;
+	    text-align: center;
+	}
+	.about h2 {
+	    padding-right: 0;
+	    font-size: 28px;
+	}
+	.about p {   
+		padding-right: 0%;
+	}
+	.about .btn-custom {
+	    margin-bottom: 40px;
+	}
+	.feature {
+	    text-align: center;
+	}
+	.feature .left p {
+	    padding-right: 0%;
+	}
+	.feature .right h2 {
+	    font-size: 25px;
+	    padding-right: 0;
+	}
+	.branding .box {
+	    text-align: center;
+	}
+	.branding h2 {
+	    text-align: center;
+	    font-size: 25px;
+	}
+	.branding p {
+	    text-align: center;
+	    padding-left: 0;
+	}
+	.design {
+	    text-align: center;
+	}
+	.design h2 {
+	    font-size: 25px;
+	    padding-right: 0;
+	}
+	.contact h2 {
+	    font-size: 32px;
+	    text-align: center;
+	    padding-left: 0;
+	}
+	.contact p {
+	    text-align: center;
+	}
+	.contact form {
+	    margin-top: 40px;
+	}
+	 
+
+}
+
+@media (min-width: 320px) and (max-width: 575px){
+
+	.hero-area h1 {
+	    padding: 0;
+	    font-size: 25px;
+	}
+	.hero-area p {
+	    padding: 0;
+	}
+	.hero-area .btn-cta {
+	    margin-top: 20px;
+	}
+	.hero-area .btn-ghost {
+	    margin-top: 20px;
+	}
+	.service {
+	    margin-top: -50px;
+	}
+	.service .box {
+	    margin-bottom: 30px;
+	    text-align: center;
+	}
+	.service .box .white-line {
+	    margin: 0 auto;
+	}
+	.service .box p {
+	    padding-top: 20px;
+	}
+	.service {
+	    padding-bottom: 20px;
+	}
+	.works {
+	    padding: 20px 0px;
+	}
+	.works h1 {
+	    font-size: 30px;
+	}
+	.works p {
+	    padding: 0;
+	    font-size: 15px;
+	}
+	.works h2 {
+	    font-size: 25px;
+	}
+	.about {
+	    text-align: center;
+	}
+	.about h2 {
+	    font-size: 25px;
+	    padding-right: 0px;
+	}
+	.about p {
+	    padding-right: 0;
+	}
+	.about .btn-custom {
+	    margin-bottom: 20px;
+	}
+	.about {
+	    padding: 40px 0px 80px;
+	}
+	.feature {
+	    text-align: center;
+	}
+	.feature .right h2 {
+	    font-size: 25px;
+	    padding-right: 0;
+	}
+	.branding {
+	    text-align: center;
+	}
+	.branding .img-1 {
+	    margin: 30px 0px;
+	}
+	.branding .img-2 {
+	    margin: 30px 0px;
+	}
+	.branding .img-3 {
+	    margin: 30px 0px;
+	}
+	.branding .img-4 {
+	    margin: 30px 0px;
+	}
+	.branding h2 {
+	    text-align: center;
+	    font-size: 25px;
+	}
+	.branding p {
+	    text-align: center;
+	    padding-left: 0;
+	}
+	.design {
+	    text-align: center;
+	}
+	.design .left-box {
+	    padding: 40px 0px;
+	}
+	.design h2 {
+	    font-size: 25px;
+	    padding-right: 0;
+	}
+	.design .box {
+	    margin-top: 20px;
+	}
+	.contact h2 {
+	    font-size: 30px;
+	    text-align: center;
+	    padding-left: 0;
+	}
+	.contact p {
+	    text-align: center;
+	}
+	.contact form {
+	    margin-top: 30px;
+	}
+	.company{
+		margin-bottom: 20px;
+	}
+
+}
+
+
+/*Responsive CSS End*/
+
