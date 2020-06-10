@@ -47,6 +47,7 @@ p{
 	right: 50px;
 	background: orange;
 	color: #000;
+	z-index: 10;
 }
 
 /*Header Section CSS*/
